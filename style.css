@@ -9,8 +9,9 @@ h1{
 
 section{
     display: flex;
-    flex-direction: row;
+    margin-bottom: 100px;
 }
+
 p{
     text-align: justify;
 }
@@ -25,22 +26,16 @@ p{
 
 }
 
+.half-width2{
+    width: 50%;
+    padding-right: 5%;
+
+}
+
 .half-width img{
     width: 80%;
 }
 
-.half-width2{
-    width: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-
-}
-
-.half-width2 img{
-    width: 80%;
-}
 
 .link-button{
     text-decoration: none;
@@ -58,4 +53,10 @@ p{
 .top-banner{
     background-image: url(/img/top-banner.png);
     background-repeat: no-repeat;
+}
+
+.dream{
+    background-image: url(img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }

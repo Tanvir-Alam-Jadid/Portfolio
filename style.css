@@ -1,3 +1,40 @@
+/* for animation start*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: clamp(2rem, 2.8vw, 5rem);
+    font-weight: bold;
+  }
+  
+  .typewriter {
+      width: 21.5ch;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid #212121;
+      animation: cursor 1s step-start infinite, 
+      text 5s steps(18) alternate infinite;
+  }
+  
+  @keyframes cursor {
+      0%, 100% { 
+      border-color: #212121; 
+    }
+  }
+  
+  @keyframes text {
+      0% { 
+      width: 0; 
+    }
+      100% { 
+      width: 21.5ch; 
+    }
+  }
+
+  /* animation finish */
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -6,8 +43,10 @@ body{
 h1{
     font-size: 50px;
 }
-
-section{
+h2{
+    font-size: 40px;
+}
+.flex-container{
     display: flex;
     margin-bottom: 100px;
 }
@@ -59,4 +98,36 @@ p{
     background-image: url(img/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.experience{
+    background-image: url(img/exp-bg.png);
+    background-repeat: no-repeat;
+}
+
+#align{
+    text-align: center;
+}
+
+
+.experience-box{
+    box-shadow: 10px 10px 40px gray;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#front-end{
+    border-left: 7px solid #fa755e;
+}
+
+#back-end{
+    border-left: 7px solid #2c5972;
+}
+footer p{
+    text-align: center;
+    color: #3f3f3f;
 }

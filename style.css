@@ -11,6 +11,9 @@ section{
     display: flex;
     flex-direction: row;
 }
+p{
+    text-align: justify;
+}
 
 .Heading-color{
     color: orange;
@@ -26,13 +29,30 @@ section{
     width: 80%;
 }
 
+.half-width2{
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+
+}
+
+.half-width2 img{
+    width: 80%;
+}
+
 .link-button{
     text-decoration: none;
-    background: linear-gradient(45deg, lightsalmon, tomato);
+    background: linear-gradient(360deg, lightsalmon, tomato);
     padding: 10px 40px;
     border-radius: 5px;
     color: white;
     font-weight: 700;
+}
+
+.link-button:hover{
+    background: linear-gradient(270deg, tomato,lightsalmon );
 }
 
 .top-banner{
